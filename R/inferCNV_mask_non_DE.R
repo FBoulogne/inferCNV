@@ -49,8 +49,7 @@ mask_non_DE_genes_basic <- function(infercnv_obj,
     
     
     infercnv_obj <- .mask_DE_genes(infercnv_obj,
-                                   tumor_groupings,
-                                   all_DE_results,
+                                   all_DE_results=all_DE_results,
                                    mask_val=center_val,
                                    require_DE_all_normals=require_DE_all_normals)
 
